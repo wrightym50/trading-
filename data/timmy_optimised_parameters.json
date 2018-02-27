@@ -1,0 +1,113 @@
+{
+  "type": "list",
+  "attributes": {
+    "names": {
+      "type": "character",
+      "attributes": {},
+      "value": ["x_leg_expr", "y_leg_expr", "max_boundary", "intercept_var", "slope_var", "sd_lookback", "stop_loss", "start_time", "end_time", "max_clip_count"]
+    }
+  },
+  "value": [
+    {
+      "type": "list",
+      "attributes": {
+        "names": {
+          "type": "character",
+          "attributes": {},
+          "value": ["IR03", "IR06"]
+        }
+      },
+      "value": [
+        {
+          "type": "double",
+          "attributes": {},
+          "value": [1]
+        },
+        {
+          "type": "double",
+          "attributes": {},
+          "value": [-1]
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "attributes": {
+        "names": {
+          "type": "character",
+          "attributes": {},
+          "value": ["XT01"]
+        }
+      },
+      "value": [
+        {
+          "type": "double",
+          "attributes": {},
+          "value": [1]
+        }
+      ]
+    },
+    {
+      "type": "double",
+      "attributes": {},
+      "value": [1.68955]
+    },
+    {
+      "type": "double",
+      "attributes": {},
+      "value": [0.48283]
+    },
+    {
+      "type": "double",
+      "attributes": {},
+      "value": [0.91336]
+    },
+    {
+      "type": "double",
+      "attributes": {},
+      "value": [90.43194]
+    },
+    {
+      "type": "NULL"
+    },
+    {
+      "type": "double",
+      "attributes": {
+        "class": {
+          "type": "character",
+          "attributes": {},
+          "value": ["POSIXct", "POSIXt"]
+        },
+        "tzone": {
+          "type": "character",
+          "attributes": {},
+          "value": ["GMT"]
+        }
+      },
+      "value": [1453377600]
+    },
+    {
+      "type": "double",
+      "attributes": {
+        "class": {
+          "type": "character",
+          "attributes": {},
+          "value": ["POSIXct", "POSIXt"]
+        },
+        "tzone": {
+          "type": "character",
+          "attributes": {},
+          "value": ["GMT"]
+        }
+      },
+      "value": [1516536000]
+    },
+    {
+      "type": "double",
+      "attributes": {},
+      "value": [2]
+    }
+  ]
+}
+
+

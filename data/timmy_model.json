@@ -1,0 +1,18 @@
+{
+  "model.date": "2018-02-20",
+  "x_leg_expr": {
+    "IR03": 1,
+    "IR06": -1
+  },
+  "y_leg_expr": {
+    "XT01": 1
+  },
+  "max.clip.count": 2,
+  "intercept": 97.73664,
+  "slope": -1.9867,
+  "residual.stdev": 0.0262,
+  "max.boundary": 1.68955,
+  "entry.threshold": 0.02214
+}
+
+

@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportRequest xmlns="http://www.reuters.com/Datascope/ReportRequest.xsd">
+<ReportTemplate version="2">
+  <ReportAction>Replace</ReportAction>
+  <Name>time_and_sales_2018_01</Name>
+  <TemplateType>TickHistoryTimeAndSales</TemplateType>
+  <Conditions>
+    <BoolCondition>
+      <Name>ApplyCorrectionsCancellations</Name>
+      <Value>No</Value>
+    </BoolCondition>
+    <TextCondition>
+      <Name>DateRangeTimeZone</Name>
+      <Value>AUS Eastern Standard Time</Value>
+    </TextCondition>
+    <BoolCondition>
+      <Name>DisplaySourceRIC</Name>
+      <Value>Yes</Value>
+    </BoolCondition>
+    <SingleSelectionCondition>
+      <Name>ExtractBy</Name>
+      <Value>Ric</Value>
+    </SingleSelectionCondition>
+    <SingleSelectionCondition>
+      <Name>MessageTimeStamp</Name>
+      <Value>GmtUtc</Value>
+    </SingleSelectionCondition>
+    <DateTimeCondition>
+      <Name>QueryEndDate</Name>
+      <Value>2018-02-01T16:35:00</Value>
+    </DateTimeCondition>
+    <DateTimeCondition>
+      <Name>QueryStartDate</Name>
+      <Value>2018-01-02T16:35:00</Value>
+    </DateTimeCondition>
+    <SingleSelectionCondition>
+      <Name>ReportDateRangeType</Name>
+      <Value>Range</Value>
+    </SingleSelectionCondition>
+    <SingleSelectionCondition>
+      <Name>SortBy</Name>
+      <Value>SingleByRic</Value>
+    </SingleSelectionCondition>
+  </Conditions>
+  <Body>
+    <NumericDataField>
+      <Name>Quote - Ask Price</Name>
+      <FieldNumber>0</FieldNumber>
+      <DataFieldType>Numeric</DataFieldType>
+      <Justification>Left</Justification>
+      <Width>33</Width>
+      <WidthStyle>Variable</WidthStyle>
+      <Label> </Label>
+      <DecimalPlaces>9</DecimalPlaces>
+      <DecimalSeparator>Period</DecimalSeparator>
+      <IntegerPlaces>18</IntegerPlaces>
+      <LeadingZeroes>No</LeadingZeroes>
+      <TrailingZeroes>No</TrailingZeroes>
+      <ThousandSeparator>Yes</ThousandSeparator>
+      <ThousandCharacter>Comma</ThousandCharacter>
+      <NegativePosition>Before</NegativePosition>
+    </NumericDataField>
+    <NumericDataField>
+      <Name>Quote - Ask Size</Name>
+      <FieldNumber>1</FieldNumber>
+      <DataFieldType>Numeric</DataFieldType>
+      <Justification>Left</Justification>
+      <Width>33</Width>
+      <WidthStyle>Variable</WidthStyle>
+      <Label> </Label>
+      <DecimalPlaces>9</DecimalPlaces>
+      <DecimalSeparator>Period</DecimalSeparator>
+      <IntegerPlaces>18</IntegerPlaces>
+      <LeadingZeroes>No</LeadingZeroes>
+      <TrailingZeroes>No</TrailingZeroes>
+      <ThousandSeparator>Yes</ThousandSeparator>
+      <ThousandCharacter>Comma</ThousandCharacter>
+      <NegativePosition>Before</NegativePosition>
+    </NumericDataField>
+    <NumericDataField>
+      <Name>Quote - Bid Price</Name>
+      <FieldNumber>2</FieldNumber>
+      <DataFieldType>Numeric</DataFieldType>
+      <Justification>Left</Justification>
+      <Width>33</Width>
+      <WidthStyle>Variable</WidthStyle>
+      <Label> </Label>
+      <DecimalPlaces>9</DecimalPlaces>
+      <DecimalSeparator>Period</DecimalSeparator>
+      <IntegerPlaces>18</IntegerPlaces>
+      <LeadingZeroes>No</LeadingZeroes>
+      <TrailingZeroes>No</TrailingZeroes>
+      <ThousandSeparator>Yes</ThousandSeparator>
+      <ThousandCharacter>Comma</ThousandCharacter>
+      <NegativePosition>Before</NegativePosition>
+    </NumericDataField>
+    <NumericDataField>
+      <Name>Quote - Bid Size</Name>
+      <FieldNumber>3</FieldNumber>
+      <DataFieldType>Numeric</DataFieldType>
+      <Justification>Left</Justification>
+      <Width>33</Width>
+      <WidthStyle>Variable</WidthStyle>
+      <Label> </Label>
+      <DecimalPlaces>9</DecimalPlaces>
+      <DecimalSeparator>Period</DecimalSeparator>
+      <IntegerPlaces>18</IntegerPlaces>
+      <LeadingZeroes>No</LeadingZeroes>
+      <TrailingZeroes>No</TrailingZeroes>
+      <ThousandSeparator>Yes</ThousandSeparator>
+      <ThousandCharacter>Comma</ThousandCharacter>
+      <NegativePosition>Before</NegativePosition>
+    </NumericDataField>
+    <DateDataField>
+      <Name>Trade - Date</Name>
+      <FieldNumber>4</FieldNumber>
+      <DataFieldType>Date</DataFieldType>
+      <Justification>Left</Justification>
+      <WidthStyle>Variable</WidthStyle>
+      <Label> </Label>
+      <DateFormat>yyyy-MM-dd</DateFormat>
+    </DateDataField>
+    <NumericDataField>
+      <Name>Trade - Price</Name>
+      <FieldNumber>5</FieldNumber>
+      <DataFieldType>Numeric</DataFieldType>
+      <Justification>Left</Justification>
+      <Width>33</Width>
+      <WidthStyle>Variable</WidthStyle>
+      <Label> </Label>
+      <DecimalPlaces>9</DecimalPlaces>
+      <DecimalSeparator>Period</DecimalSeparator>
+      <IntegerPlaces>18</IntegerPlaces>
+      <LeadingZeroes>No</LeadingZeroes>
+      <TrailingZeroes>No</TrailingZeroes>
+      <ThousandSeparator>Yes</ThousandSeparator>
+      <ThousandCharacter>Comma</ThousandCharacter>
+      <NegativePosition>Before</NegativePosition>
+    </NumericDataField>
+    <NumericDataField>
+      <Name>Trade - Volume</Name>
+      <FieldNumber>6</FieldNumber>
+      <DataFieldType>Numeric</DataFieldType>
+      <Justification>Left</Justification>
+      <Width>23</Width>
+      <WidthStyle>Variable</WidthStyle>
+      <Label> </Label>
+      <DecimalPlaces>0</DecimalPlaces>
+      <DecimalSeparator>Period</DecimalSeparator>
+      <IntegerPlaces>18</IntegerPlaces>
+      <LeadingZeroes>No</LeadingZeroes>
+      <TrailingZeroes>No</TrailingZeroes>
+      <ThousandSeparator>Yes</ThousandSeparator>
+      <ThousandCharacter>Comma</ThousandCharacter>
+      <NegativePosition>Before</NegativePosition>
+    </NumericDataField>
+    <TextDataField>
+      <Name>Market Conditions - Qualifiers</Name>
+      <FieldNumber>7</FieldNumber>
+      <DataFieldType>Text</DataFieldType>
+      <Justification>Left</Justification>
+      <WidthStyle>Variable</WidthStyle>
+      <Label> </Label>
+      <Capitalization>None</Capitalization>
+    </TextDataField>
+    <DateDataField>
+      <Name>Settlement Price - Date</Name>
+      <FieldNumber>8</FieldNumber>
+      <DataFieldType>Date</DataFieldType>
+      <Justification>Left</Justification>
+      <WidthStyle>Variable</WidthStyle>
+      <Label> </Label>
+      <DateFormat>yyyy-MM-dd</DateFormat>
+    </DateDataField>
+    <NumericDataField>
+      <Name>Settlement Price - Price</Name>
+      <FieldNumber>9</FieldNumber>
+      <DataFieldType>Numeric</DataFieldType>
+      <Justification>Left</Justification>
+      <Width>33</Width>
+      <WidthStyle>Variable</WidthStyle>
+      <Label> </Label>
+      <DecimalPlaces>9</DecimalPlaces>
+      <DecimalSeparator>Period</DecimalSeparator>
+      <IntegerPlaces>18</IntegerPlaces>
+      <LeadingZeroes>No</LeadingZeroes>
+      <TrailingZeroes>No</TrailingZeroes>
+      <ThousandSeparator>Yes</ThousandSeparator>
+      <ThousandCharacter>Comma</ThousandCharacter>
+      <NegativePosition>Before</NegativePosition>
+    </NumericDataField>
+    <NumericDataField>
+      <Name>Trade - Bid Price</Name>
+      <FieldNumber>10</FieldNumber>
+      <DataFieldType>Numeric</DataFieldType>
+      <Justification>Left</Justification>
+      <Width>33</Width>
+      <WidthStyle>Variable</WidthStyle>
+      <Label> </Label>
+      <DecimalPlaces>9</DecimalPlaces>
+      <DecimalSeparator>Period</DecimalSeparator>
+      <IntegerPlaces>18</IntegerPlaces>
+      <LeadingZeroes>No</LeadingZeroes>
+      <TrailingZeroes>No</TrailingZeroes>
+      <ThousandSeparator>Yes</ThousandSeparator>
+      <ThousandCharacter>Comma</ThousandCharacter>
+      <NegativePosition>Before</NegativePosition>
+    </NumericDataField>
+    <NumericDataField>
+      <Name>Trade - Bid Size</Name>
+      <FieldNumber>11</FieldNumber>
+      <DataFieldType>Numeric</DataFieldType>
+      <Justification>Left</Justification>
+      <Width>33</Width>
+      <WidthStyle>Variable</WidthStyle>
+      <Label> </Label>
+      <DecimalPlaces>9</DecimalPlaces>
+      <DecimalSeparator>Period</DecimalSeparator>
+      <IntegerPlaces>18</IntegerPlaces>
+      <LeadingZeroes>No</LeadingZeroes>
+      <TrailingZeroes>No</TrailingZeroes>
+      <ThousandSeparator>Yes</ThousandSeparator>
+      <ThousandCharacter>Comma</ThousandCharacter>
+      <NegativePosition>Before</NegativePosition>
+    </NumericDataField>
+    <NumericDataField>
+      <Name>Trade - Ask Price</Name>
+      <FieldNumber>12</FieldNumber>
+      <DataFieldType>Numeric</DataFieldType>
+      <Justification>Left</Justification>
+      <Width>33</Width>
+      <WidthStyle>Variable</WidthStyle>
+      <Label> </Label>
+      <DecimalPlaces>9</DecimalPlaces>
+      <DecimalSeparator>Period</DecimalSeparator>
+      <IntegerPlaces>18</IntegerPlaces>
+      <LeadingZeroes>No</LeadingZeroes>
+      <TrailingZeroes>No</TrailingZeroes>
+      <ThousandSeparator>Yes</ThousandSeparator>
+      <ThousandCharacter>Comma</ThousandCharacter>
+      <NegativePosition>Before</NegativePosition>
+    </NumericDataField>
+    <NumericDataField>
+      <Name>Trade - Ask Size</Name>
+      <FieldNumber>13</FieldNumber>
+      <DataFieldType>Numeric</DataFieldType>
+      <Justification>Left</Justification>
+      <Width>33</Width>
+      <WidthStyle>Variable</WidthStyle>
+      <Label> </Label>
+      <DecimalPlaces>9</DecimalPlaces>
+      <DecimalSeparator>Period</DecimalSeparator>
+      <IntegerPlaces>18</IntegerPlaces>
+      <LeadingZeroes>No</LeadingZeroes>
+      <TrailingZeroes>No</TrailingZeroes>
+      <ThousandSeparator>Yes</ThousandSeparator>
+      <ThousandCharacter>Comma</ThousandCharacter>
+      <NegativePosition>Before</NegativePosition>
+    </NumericDataField>
+    <NumericDataField>
+      <Name>Quote - Volume</Name>
+      <FieldNumber>14</FieldNumber>
+      <DataFieldType>Numeric</DataFieldType>
+      <Justification>Left</Justification>
+      <Width>23</Width>
+      <WidthStyle>Variable</WidthStyle>
+      <Label> </Label>
+      <DecimalPlaces>0</DecimalPlaces>
+      <DecimalSeparator>Period</DecimalSeparator>
+      <IntegerPlaces>18</IntegerPlaces>
+      <LeadingZeroes>No</LeadingZeroes>
+      <TrailingZeroes>No</TrailingZeroes>
+      <ThousandSeparator>Yes</ThousandSeparator>
+      <ThousandCharacter>Comma</ThousandCharacter>
+      <NegativePosition>Before</NegativePosition>
+    </NumericDataField>
+    <NumericDataField>
+      <Name>Quote - Price</Name>
+      <FieldNumber>15</FieldNumber>
+      <DataFieldType>Numeric</DataFieldType>
+      <Justification>Left</Justification>
+      <Width>33</Width>
+      <WidthStyle>Variable</WidthStyle>
+      <Label> </Label>
+      <DecimalPlaces>9</DecimalPlaces>
+      <DecimalSeparator>Period</DecimalSeparator>
+      <IntegerPlaces>18</IntegerPlaces>
+      <LeadingZeroes>No</LeadingZeroes>
+      <TrailingZeroes>No</TrailingZeroes>
+      <ThousandSeparator>Yes</ThousandSeparator>
+      <ThousandCharacter>Comma</ThousandCharacter>
+      <NegativePosition>Before</NegativePosition>
+    </NumericDataField>
+    <TextDataField>
+      <Name>Quote - Exchange Time</Name>
+      <FieldNumber>16</FieldNumber>
+      <DataFieldType>Text</DataFieldType>
+      <Justification>Left</Justification>
+      <WidthStyle>Variable</WidthStyle>
+      <Label> </Label>
+      <Capitalization>None</Capitalization>
+    </TextDataField>
+    <TextDataField>
+      <Name>Trade - Exchange Time</Name>
+      <FieldNumber>17</FieldNumber>
+      <DataFieldType>Text</DataFieldType>
+      <Justification>Left</Justification>
+      <WidthStyle>Variable</WidthStyle>
+      <Label> </Label>
+      <Capitalization>None</Capitalization>
+    </TextDataField>
+    <NumericDataField>
+      <Name>Trade - Open Interest</Name>
+      <FieldNumber>18</FieldNumber>
+      <DataFieldType>Numeric</DataFieldType>
+      <Justification>Left</Justification>
+      <Width>33</Width>
+      <WidthStyle>Variable</WidthStyle>
+      <Label> </Label>
+      <DecimalPlaces>9</DecimalPlaces>
+      <DecimalSeparator>Period</DecimalSeparator>
+      <IntegerPlaces>18</IntegerPlaces>
+      <LeadingZeroes>No</LeadingZeroes>
+      <TrailingZeroes>No</TrailingZeroes>
+      <ThousandSeparator>Yes</ThousandSeparator>
+      <ThousandCharacter>Comma</ThousandCharacter>
+      <NegativePosition>Before</NegativePosition>
+    </NumericDataField>
+  </Body>
+</ReportTemplate>
+</ReportRequest>
